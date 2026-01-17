@@ -1,26 +1,52 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+@theme {
+  /* --- Custom Colors --- */
+  --color-kenyan-clay: #B55239;
+  --color-acacia-bark: #6B4F3A;
+  --color-highland-sage: #8A9A5B;
+  --color-nairobi-stone: #E8E4D9;
+  --color-soft-sand: #D6C7B0;
+  --color-volcanic-charcoal: #2B2B2B;
+  --color-savanna-gold: #CFAE67;
+  --color-dusk-blue: #4A5A6A;
+
+  /* --- Fonts --- */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif;
+
+  /* --- Border Radius & Spacing --- */
+  --radius-soft: 0.375rem;
+  --spacing-section: 6rem;
+
+  /* --- Container & Breakpoints --- */
+  --breakpoint-lg: 900px;
+  --breakpoint-xl: 1100px;
+}
+
+/* --- Global Variables --- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --transition-speed: 500ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* --- Base Layers --- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    /* Note: v4 uses kebab-case (nairobi-stone) automatically */
+    @apply bg-nairobi-stone text-volcanic-charcoal antialiased;
+    transition: background-color var(--transition-speed) ease-in-out;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
 }
