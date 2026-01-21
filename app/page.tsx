@@ -1,4 +1,3 @@
-// app/page.tsx
 import Hero from "@/components/home/Hero";
 import ProjectGrid from "@/components/home/ProjectGrid";
 import { getProjects } from "@/lib/content/getProjects";

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <nav className="w-full py-8 px-6 flex items-center justify-between max-w-7xl mx-auto">
-      {/* The Logo: Using the Serif font for a "curly/elegant" look */}
+      {/* Logo */}
       <Link href="/" className="font-serif text-3xl tracking-tight text-volcanic-charcoal italic">
         Fidel Castro
       </Link>
@@ -18,11 +18,8 @@ export default function Navigation() {
         <Link href="/work" className="text-sm uppercase tracking-widest hover:text-kenyan-clay transition-colors">
           Work
         </Link>
-        <Link 
-          href="/contact" 
-          className="text-sm uppercase tracking-widest hover:text-kenyan-clay transition-colors"
-        >
-          Contact
+        <Link href="/magazines" className="text-sm uppercase tracking-widest hover:text-kenyan-clay transition-colors">
+          Magazines
         </Link>
       </div>
     </nav>

@@ -43,7 +43,7 @@ export default function Hero() {
                 {/* Decorative Background Frame */}
                 <div className="absolute -inset-4 border border-acacia-bark/10 translate-x-4 translate-y-4 rounded-soft pointer-events-none" />
 
-                <div className="relative `aspect-4/5` w-full `max-w-120` mx-auto overflow-hidden rounded-soft shadow-2xl border border-soft-sand/30 bg-soft-sand/20">
+                <div className="relative aspect-4/5 w-full max-w-120 mx-auto overflow-hidden rounded-soft shadow-2xl border border-soft-sand/30 bg-soft-sand/20">
                 <Image
                     src="/images/fine-art/Sad.png"
                     alt="Fine Art Study by Fidel Castro"

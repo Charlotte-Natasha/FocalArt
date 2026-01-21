@@ -17,7 +17,7 @@ interface ProjectGridProps {
     export default function ProjectGrid({ projects }: ProjectGridProps) {
         if (!projects || projects.length === 0) {
             return (
-            <div className="text-center py-16 text-duskBlue">
+            <div className="text-center py-16 text-dusk-blue">
                 <p>No projects available yet. Add some MDX files to get started!</p>
             </div>
             )
@@ -33,7 +33,7 @@ interface ProjectGridProps {
             >
             <article className="space-y-4">
                 {/* Project Image */}
-                <div className="relative aspect-[4/3] bg-softSand rounded-soft overflow-hidden">
+                <div className="relative aspect-[4/3] bg-soft-sand rounded-soft overflow-hidden">
                 <Image
                     src={project.coverImage}
                     alt={project.title}
@@ -44,17 +44,17 @@ interface ProjectGridProps {
 
                 {/* Project Info */}
                 <div>
-                <div className="flex items-center gap-3 text-sm text-duskBlue mb-2">
+                <div className="flex items-center gap-3 text-sm text-dusk-blue mb-2">
                     <span className="uppercase tracking-wider">{project.category}</span>
                     <span>•</span>
                     <span>{project.year}</span>
                 </div>
-                
-                <h3 className="text-xl font-display font-bold text-volcanicCharcoal group-hover:text-kenyanClay transition-colors mb-2">
+
+                <h3 className="text-xl font-display font-bold text-volcanic-charcoal group-hover:text-kenyan-clay transition-colors mb-2">
                     {project.title}
                 </h3>
-                
-                <p className="text-acaciaBark line-clamp-2">
+
+                <p className="text-acacia-bark line-clamp-2">
                     {project.description}
                 </p>
                 </div>
