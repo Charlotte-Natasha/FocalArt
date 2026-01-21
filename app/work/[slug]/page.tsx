@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// This will eventually be dynamic - for now it's hardcoded
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+// Add this to make params async-compatible for Next.js 15
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function ProjectPage({ params }: Props) {
+  // Await params in Next.js 15+
+  const { slug } = await params;
+
   // Mock project data - replace with real data later
   const project = {
     title: "Airtel Kenya Brand Campaign",
