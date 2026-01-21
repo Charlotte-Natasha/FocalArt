@@ -1,7 +1,7 @@
 export default function AboutPage() {
 
-    return (
-        <div className="max-w-4xl mx-auto px-6 py-16">
+return (
+    <div className="max-w-4xl mx-auto px-6 py-16">
         
         {/* Header */}
         <header className="mb-16">

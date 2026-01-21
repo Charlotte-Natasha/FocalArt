@@ -3,9 +3,9 @@ import ProjectGrid from "@/components/home/ProjectGrid";
 import { getProjects } from "@/lib/content/getProjects";
 
 export default async function HomePage() {
-  const projects = await getProjects();
+const projects = await getProjects();
 
-  return (
+return (
     <main className="min-h-screen bg-nairobi-stone">
       <Hero />
 

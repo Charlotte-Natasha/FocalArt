@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
     // Temporary hardcoded project data
-    const projects = [
+const projects = [
     {
         slug: 'airtel-kenya-campaign',
         title: 'Airtel Kenya Brand Campaign',
