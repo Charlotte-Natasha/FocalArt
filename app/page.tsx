@@ -13,16 +13,17 @@ export default async function HomePage() {
       <section className="py-12 border-y border-soft-sand overflow-hidden bg-nairobi-stone">
         <div className="inline-flex gap-16 animate-marquee whitespace-nowrap text-acacia-bark/40 font-display text-lg uppercase tracking-[0.2em]">
           {/* First set */}
-          <span>Airtel Kenya</span>
-          <span>DSTV</span>
-          <span>Marie Stopes</span>
-          <span>Sketchers Design Promoters</span>
-          <span>Kenyatta University</span>
+          <span>Sustainable Design</span>
+          <span>User Research</span>
+          <span>Material Studies</span>
+          <span>Design Thinking</span>
+          <span>Prototyping</span>
           {/* Duplicate for smooth infinite loop */}
-          <span>Airtel Kenya</span>
-          <span>DSTV</span>
-          <span>Marie Stopes</span>
-          <span>Sketchers Design Promoters</span>
+          <span>Sustainable Design</span>
+          <span>User Research</span>
+          <span>Material Studies</span>
+          <span>Design Thinking</span>
+          <span>Prototyping</span>
           <span>Kenyatta University</span>
         </div>
       </section>
