@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Add this to make params async-compatible for Next.js 15
 type Props = {
   params: { slug: string };
 };
 
 export default function ProjectPage({ params }: Props) {
-  // Await params in Next.js 15+
+  
   const { slug } = params;
 
   console.log("Project slug:", slug);
