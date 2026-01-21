@@ -3,12 +3,14 @@ import Link from "next/link";
 
 // Add this to make params async-compatible for Next.js 15
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
-export default async function ProjectPage({ params }: Props) {
+export default function ProjectPage({ params }: Props) {
   // Await params in Next.js 15+
-  const { slug } = await params;
+  const { slug } = params;
+
+  console.log("Project slug:", slug);
 
   // Mock project data - replace with real data later
   const project = {
