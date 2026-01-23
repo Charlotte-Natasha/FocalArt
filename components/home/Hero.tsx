@@ -33,7 +33,7 @@ export default function Hero() {
                     href="/about"
                     className="px-8 py-4 border-2 border-volcanic-charcoal text-volcanic-charcoal font-medium rounded-soft hover:bg-volcanic-charcoal hover:text-nairobi-stone transition-all duration-300"
                 >
-                    Read Statement
+                    More About Me
                 </Link>
                 </div>
             </div>
